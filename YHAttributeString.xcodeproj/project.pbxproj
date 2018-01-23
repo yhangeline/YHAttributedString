@@ -13,6 +13,10 @@
 		F88C72912011DAB800B3C6B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F88C72902011DAB800B3C6B5 /* Assets.xcassets */; };
 		F88C72942011DAB800B3C6B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F88C72922011DAB800B3C6B5 /* LaunchScreen.storyboard */; };
 		F88C72972011DAB800B3C6B5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F88C72962011DAB800B3C6B5 /* main.m */; };
+		F88C72A12015C7F700B3C6B5 /* NSMutableAttributedString+YH.m in Sources */ = {isa = PBXBuildFile; fileRef = F88C72A02015C7F700B3C6B5 /* NSMutableAttributedString+YH.m */; };
+		F88C72A42015F56A00B3C6B5 /* icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = F88C72A32015F56A00B3C6B5 /* icon2.png */; };
+		F88C72A62015F57C00B3C6B5 /* icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = F88C72A52015F57C00B3C6B5 /* icon1.png */; };
+		F88C72A82015F58600B3C6B5 /* icon3.png in Resources */ = {isa = PBXBuildFile; fileRef = F88C72A72015F58600B3C6B5 /* icon3.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,12 @@
 		F88C72932011DAB800B3C6B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F88C72952011DAB800B3C6B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F88C72962011DAB800B3C6B5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F88C729F2015C7F700B3C6B5 /* NSMutableAttributedString+YH.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableAttributedString+YH.h"; sourceTree = "<group>"; };
+		F88C72A02015C7F700B3C6B5 /* NSMutableAttributedString+YH.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableAttributedString+YH.m"; sourceTree = "<group>"; };
+		F88C72A22015CDDD00B3C6B5 /* YHAttributeStringConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YHAttributeStringConfig.h; sourceTree = "<group>"; };
+		F88C72A32015F56A00B3C6B5 /* icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon2.png; sourceTree = "<group>"; };
+		F88C72A52015F57C00B3C6B5 /* icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon1.png; sourceTree = "<group>"; };
+		F88C72A72015F58600B3C6B5 /* icon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon3.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,15 +68,29 @@
 		F88C72862011DAB800B3C6B5 /* YHAttributeString */ = {
 			isa = PBXGroup;
 			children = (
+				F88C729D2011DAC500B3C6B5 /* YHAttributeString */,
 				F88C72872011DAB800B3C6B5 /* AppDelegate.h */,
 				F88C72882011DAB800B3C6B5 /* AppDelegate.m */,
 				F88C728A2011DAB800B3C6B5 /* ViewController.h */,
 				F88C728B2011DAB800B3C6B5 /* ViewController.m */,
 				F88C728D2011DAB800B3C6B5 /* Main.storyboard */,
+				F88C72A72015F58600B3C6B5 /* icon3.png */,
+				F88C72A52015F57C00B3C6B5 /* icon1.png */,
+				F88C72A32015F56A00B3C6B5 /* icon2.png */,
 				F88C72902011DAB800B3C6B5 /* Assets.xcassets */,
 				F88C72922011DAB800B3C6B5 /* LaunchScreen.storyboard */,
 				F88C72952011DAB800B3C6B5 /* Info.plist */,
 				F88C72962011DAB800B3C6B5 /* main.m */,
+			);
+			path = YHAttributeString;
+			sourceTree = "<group>";
+		};
+		F88C729D2011DAC500B3C6B5 /* YHAttributeString */ = {
+			isa = PBXGroup;
+			children = (
+				F88C729F2015C7F700B3C6B5 /* NSMutableAttributedString+YH.h */,
+				F88C72A02015C7F700B3C6B5 /* NSMutableAttributedString+YH.m */,
+				F88C72A22015CDDD00B3C6B5 /* YHAttributeStringConfig.h */,
 			);
 			path = YHAttributeString;
 			sourceTree = "<group>";
@@ -129,8 +153,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F88C72A82015F58600B3C6B5 /* icon3.png in Resources */,
 				F88C72942011DAB800B3C6B5 /* LaunchScreen.storyboard in Resources */,
+				F88C72A42015F56A00B3C6B5 /* icon2.png in Resources */,
 				F88C72912011DAB800B3C6B5 /* Assets.xcassets in Resources */,
+				F88C72A62015F57C00B3C6B5 /* icon1.png in Resources */,
 				F88C728F2011DAB800B3C6B5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -145,6 +172,7 @@
 				F88C728C2011DAB800B3C6B5 /* ViewController.m in Sources */,
 				F88C72972011DAB800B3C6B5 /* main.m in Sources */,
 				F88C72892011DAB800B3C6B5 /* AppDelegate.m in Sources */,
+				F88C72A12015C7F700B3C6B5 /* NSMutableAttributedString+YH.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
