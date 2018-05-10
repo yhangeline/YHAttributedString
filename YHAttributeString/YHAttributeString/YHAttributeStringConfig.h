@@ -12,8 +12,11 @@
 //样式设置
 typedef NSMutableAttributedString*(^YHColorBlock)(UIColor *);
 typedef NSMutableAttributedString*(^YHFontBlock)(UIFont *);
+typedef NSMutableAttributedString*(^YHSpaceBlock)(NSInteger space);
 typedef NSMutableAttributedString*(^YHRangeBlock)(NSInteger loc, NSInteger length);
 typedef NSMutableAttributedString*(^YHParagraphStyleBlock)(NSParagraphStyle *);
+typedef NSMutableAttributedString*(^YHStrokeBlock)(NSInteger width);
+typedef NSMutableAttributedString*(^YHShadowBlock)(NSShadow *shadow);
 
 //匹配正则
 typedef NSMutableAttributedString*(^YHMatchesBlock)(NSString *);

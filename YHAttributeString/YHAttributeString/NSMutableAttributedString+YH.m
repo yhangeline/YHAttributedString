@@ -8,8 +8,10 @@
 
 #import "NSMutableAttributedString+YH.h"
 #import <objc/runtime.h>
+#import <CoreText/CoreText.h>
 
 @interface NSString (matches)
+
 @end
 
 @implementation NSString (matches)
@@ -24,6 +26,7 @@
     }];
     return ranges;
 }
+
 
 @end
 
@@ -197,6 +200,33 @@
     };
 }
 
+- (YHSpaceBlock)textSpace
+{
+    return  ^(NSInteger space) {
+        // 调整字间距
+        long number = space;
+        CFNumberRef num = CFNumberCreate(kCFAllocatorDefault,kCFNumberSInt8Type,&number);
+        [self addAttribute:(id)kCTKernAttributeName value:(__bridge id)num];
+        return self;
+    };
+}
+
+- (YHStrokeBlock)stroke
+{
+    return ^(NSInteger width) {
+        [self addAttribute:NSStrokeWidthAttributeName value:@(width)];
+        return self;
+    };
+}
+
+- (YHShadowBlock)shadow
+{
+    return ^(NSShadow *shadow) {
+        [self addAttribute:NSShadowAttributeName value:shadow];
+        return self;
+    };
+}
+
 - (YHParagraphStyleBlock)paragraphStyle
 {
     return ^(NSParagraphStyle *style){
@@ -220,6 +250,7 @@
         return self;
     };
 }
+
 
 - (YHUnderLineBlock)underLine
 {

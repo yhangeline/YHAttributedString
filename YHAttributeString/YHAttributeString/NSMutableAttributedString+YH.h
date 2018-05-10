@@ -21,9 +21,12 @@
 @property (nonatomic, copy, readonly) YHColorBlock color;
 @property (nonatomic, copy, readonly) YHFontBlock  font;
 @property (nonatomic, copy, readonly) YHRangeBlock range;
+@property (nonatomic, copy, readonly) YHSpaceBlock textSpace;//字间距
 @property (nonatomic, copy, readonly) YHParagraphStyleBlock paragraphStyle;
 @property (nonatomic, copy, readonly) YHUnderLineBlock underLine;
 @property (nonatomic, copy, readonly) YHStrikethroughBlock Strikethrough; //删除线
+@property (nonatomic, copy, readonly) YHStrokeBlock stroke;
+@property (nonatomic, copy, readonly) YHShadowBlock shadow;
 
 //插入图片
 @property (nonatomic, copy, readonly) YHJoinBlock join;
