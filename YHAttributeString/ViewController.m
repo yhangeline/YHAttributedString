@@ -27,7 +27,7 @@
     attS.whole.color([UIColor blueColor]).font([UIFont boldSystemFontOfSize:16]);
     attS.range(2, 7).color([UIColor redColor]).font([UIFont systemFontOfSize:30]);
     attS.matches(@"2").color([UIColor blackColor]).font([UIFont systemFontOfSize:25]);
-    attS.matches(@"拉开距离").textSpace(15);
+    attS.matches(@"拉开距离").textSpace(15).color([UIColor cyanColor]).font([UIFont systemFontOfSize:22]);
     attS.matches(@"一条线").underLine(NSUnderlineStyleSingle, [UIColor orangeColor]);
     attS.matches(@"两条线").underLine(NSUnderlineStyleDouble, [UIColor orangeColor]);
     attS.matches(@"删除线").Strikethrough(NSUnderlineStyleSingle, [UIColor redColor]);
